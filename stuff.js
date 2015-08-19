@@ -72,16 +72,16 @@ function randomNumber(min, max) {
 // $("span.apple").html(apple.price);
 
 $('.applePurchase').on('click', function(e){
-	e.preventDefault;
+	e.preventDefault();
 	user.appleBought.push(apple.price);
 	user.money -= apple.price;
-	$( "div.remainingMoney" ).html( "Remaining $" + user.money );
+	$( "div.remainingMoney" ).html(  "$" + user.money );
 	$("span.appleQuantityPurchased").html(user.appleBought.length);
 	$('span.appleAveragePrice').html(" Average Price $" + ((user.appleBought.reduce(function(a,b){ return a+b;}))/user.appleBought.length));
 	console.log(user.money,user.appleBought);
 });
 $('.orangePurchase').on('click', function(e){
-	e.preventDefault;
+	e.preventDefault();
 	user.orangeBought.push(orange.price);
 	user.money -= orange.price;
 	$( "div.remainingMoney" ).html( "$" + user.money );
@@ -91,7 +91,7 @@ $('.orangePurchase').on('click', function(e){
 });
 
 $('.bananaPurchase').on('click', function(e){
-	e.preventDefault;
+	e.preventDefault();
 	user.bananaBought.push(banana.price);
 	user.money -= banana.price;
 	$( "div.remainingMoney" ).html( "$" + user.money );
@@ -101,7 +101,7 @@ $('.bananaPurchase').on('click', function(e){
 });
 
 $('.pearPurchase').on('click', function(e){
-	e.preventDefault;
+	e.preventDefault();
 	user.pearBought.push(pear.price);
 	user.money -= pear.price;
 	$( "div.remainingMoney" ).html( "$" + user.money );
